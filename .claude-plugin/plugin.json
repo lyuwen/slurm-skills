@@ -1,0 +1,8 @@
+{
+  "name": "slurm-skills",
+  "version": "0.1.0",
+  "description": "Monitor and manage Slurm workload manager clusters — check cluster health, job queues, job history, and node resource allocation.",
+  "author": {
+    "name": "lfu"
+  }
+}

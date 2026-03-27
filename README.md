@@ -15,24 +15,16 @@ Monitor Slurm cluster status, job queues, job history, and node resources.
 - Node resource inspection (CPU/memory allocation)
 - SSH remote execution support
 
-**Usage:**
-```bash
-# Install the skill
-ln -s $(pwd)/slurm-monitor ~/.claude/skills/slurm-monitor
-
-# Example prompts
-"Check the job queue on swedev cluster"
-"Show me cluster status with job arrays grouped"
-"Inspect node resource allocation on node-01"
-```
+**Example prompts:**
+- "Check the job queue on swedev cluster"
+- "Show me cluster status with job arrays grouped"
+- "Inspect node resource allocation on node-01"
 
 ## Installation
 
-1. Clone this repository
-2. Symlink the skill to your Claude Code skills directory:
-   ```bash
-   ln -s $(pwd)/slurm-monitor ~/.claude/skills/slurm-monitor
-   ```
+```bash
+claude --plugin-dir /path/to/slurm-skills
+```
 
 ## Testing
 
