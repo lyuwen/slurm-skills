@@ -1,0 +1,23 @@
+{
+  "skill_name": "slurm-monitor",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "hey can you ssh into swedev and give me a quick status report on the cluster? just want to know if everything looks healthy and what the utilization is like across the partitions",
+      "expected_output": "A concise cluster status report showing node states by partition, overall utilization percentage, and any issues (down/drain nodes). Should use ssh swedev prefix for all commands.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "prompt": "I need to check the job queue on swedev. There's been some complaints about jobs being stuck pending. Can you tell me what's going on with the queue - how many jobs are running vs pending, who's hogging resources, and why things are stuck?",
+      "expected_output": "Job queue analysis showing running vs pending counts, breakdown by user and partition, identification of the job array with JobArrayTaskLimit reason, and explanation of the concurrency throttling.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "ssh to swedev and check node zj021-swe-11 for me - I want to see the CPU and memory allocation status. Is it being used efficiently?",
+      "expected_output": "Detailed node report showing CPUAlloc/CPUTot, AllocMem/RealMemory, current load, and an assessment of efficiency (noting if load is low despite high allocation).",
+      "files": []
+    }
+  ]
+}
